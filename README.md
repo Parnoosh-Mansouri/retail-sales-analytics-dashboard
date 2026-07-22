@@ -10,9 +10,11 @@ This project provides insights into retail sales using Power BI. The dashboard a
 
 ## 📂 Dataset
 
-- Retail Sales Dataset
+- Retail Sales Dataset (`data/sample-raw.csv`)
 - Period: 2015–2018
-- Data cleaned before visualization using Python (Pandas).
+- Data cleaned with Python/Pandas (`notebooks/1-Data_loading_cleaning.ipynb`) → `data/cleaned-sample.csv`
+- Exploratory analysis: `notebooks/2-EDA.ipynb`
+- Power BI file: `powerbi/Retail_Sales_Analytics_Dashboard.pbix`
 
 ---
 
@@ -41,21 +43,28 @@ This project provides insights into retail sales using Power BI. The dashboard a
 
 ## 📷 Dashboard Preview
 
-> Add a screenshot here.
-
-![Dashboard](dashboard.png)
+![Dashboard](./images/dashboard.png)
 
 ---
 
 ## 📁 Files
 
-Retail-Sales-Analytics-Dashboard/
-│
-├── Retail_Sales_Analytics_Dashboard.pbix
-├── cleaned-sample.csv
+```
+retail-sales-analytics-dashboard/
+├── README.md
 ├── dashboard.pdf
-├── dashboard.png
-└── README.md
+├── data/
+│   ├── cleaned-sample.csv
+│   └── sample-raw.csv
+├── images/
+│   └── dashboard.png
+├── notebooks/
+│   ├── 1-Data_loading_cleaning.ipynb
+│   └── 2-EDA.ipynb
+└── powerbi/
+    └── Retail_Sales_Analytics_Dashboard.pbix
+```
+
 ---
 
 ## 🎯 Key Insights
@@ -65,17 +74,6 @@ Retail-Sales-Analytics-Dashboard/
 - Consumer segment contributed the largest share of sales.
 - Standard Class was the most frequently used shipping mode.
 - Sales increased significantly between 2016 and 2018.
-
----
-
-## 🚀 Future Improvements
-
-- Time Intelligence (YoY & MoM Analysis)
-- Advanced DAX Measures
-- Profit & Discount Analysis
-- Dynamic KPI Cards
-- Drill-through Pages
-- Custom Tooltips
 
 ---
 
